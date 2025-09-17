@@ -1,95 +1,105 @@
-.cabecera { 
-    padding: 12px 16px;
-    background-color: #05b8bb; 
-    color: white;              
-    padding: 12px 16px;
-}           
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 
-.cabecera-box { 
-    overflow: hidden; 
-}            
-.left, .center, .right { 
-    float: left; width: 33.33%; 
+body {
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  margin: 0;
+  background-color: #e0e0e0;
+  color: #333;
 }
 
-.left h1 { 
-    margin: 0; font-size: 24px; text-align: left; 
+.cabecera {
+  padding: 12px 16px;
 }
 
-.center { 
-    text-align: center; 
+.cabecera-box {
+  overflow: hidden;
 }
-.center ul { 
-    list-style: none; margin: 0; padding: 0; 
-}
-.center li { 
-    display: inline-block; margin: 0 10px; 
-}
-.center a  {
-     text-decoration: none; color: #000; padding: 6px 8px; 
-    }
-
-.right { 
-    text-align: right; 
-}
-.right img { 
-    vertical-align: middle; margin-right: 8px; 
-}
-.right label, .right select { 
-    vertical-align: middle; 
-}
-
-.cuerpo { padding: 12px 16px; }
-
-.contenedor{
-  border:1px solid #888;
-  background:#fff;
-  padding:10px;
-  overflow:hidden;           
-}
-
-.col-izq{
-  float: left;
-  width: calc(66.66% - 10px);   
-}
-
-.col-der{
+.left,
+.center,
+.right {
   float: left;
   width: 33.33%;
-  margin-left: 10px;            
 }
 
-.clear{ 
-    clear: both; 
+.left h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
 }
 
-.caja{
-  border:1px solid #888;
-  background:#f2f2f2;
-  padding:10px;              
-  margin-bottom:14px;        
-  text-align:center;
+.center {
+  text-align: center;
+}
+.center ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.center li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.center a {
+  text-decoration: none;
+  color: #000;
+  padding: 6px 8px;
 }
 
-.izq-peq       { 
-    height: 90px; 
+.right {
+  text-align: right;
 }
-.izq-grande-1  { 
-    height: 220px; 
+.right img {
+  vertical-align: middle;
+  margin-right: 8px;
 }
-.izq-grande-2  { 
-    height: 240px; 
-}
-.der-vertical  { 
-    height: 620px; 
-}
-
-.pie {
-  background-color: #05b8bb;    
-  color: white;             
-  padding: 12px 16px;       
+.right label,
+.right select {
+  vertical-align: middle;
 }
 
+.cuerpo {
+  padding: 12px 16px;
+}
 
+.contenedor {
+  border: 1px solid #888;
+  background: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
 
+.col-izq {
+  float: left;
+  width: calc(66.66% - 10px);
+}
 
+.col-der {
+  float: left;
+  width: 33.33%;
+  margin-left: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+.caja {
+  border: 1px solid #888;
+  background: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.izq-peq {
+  height: 90px;
+}
+.izq-grande-1 {
+  height: 220px;
+}
+.izq-grande-2 {
+  height: 240px;
+}
+.der-vertical {
+  height: 620px;
+}
