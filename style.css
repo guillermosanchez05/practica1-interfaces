@@ -225,6 +225,36 @@ body {
   height: 560px;
 }
 
+.formA {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.formA .campo {
+  float: left;          
+  width: 45%;           
+  margin-right: 5%;     
+  margin-bottom: 14px;  
+}
+
+.clear {
+  clear: both;
+}
+
+.formA label {
+  display: block;       
+  margin-bottom: 6px;   
+}
+
+.formA input {
+  width: 100%;          
+  height: 20px;         
+  padding: 6px;         
+}
+
+
+
+
 /*Version B*/
 .izq-peq-B {
   height: 90px;
