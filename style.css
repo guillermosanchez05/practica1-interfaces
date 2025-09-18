@@ -105,6 +105,13 @@ body {
 
 .izq-peq {
   height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://www.shutterstock.com/image-photo/aerial-panoramic-view-hotel-zone-600nw-1790369885.jpg");
+  font-weight: bold;
+  font-size: x-large;
+  color: rgb(153, 11, 11);
 }
 .izq-grande-1 {
   height: 220px;
@@ -118,4 +125,20 @@ body {
 
 .pie {
   margin-top: 10px;
+}
+
+.flecha {
+  background-color: #04aa6d; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pack-viaje1 {
+  background-image: url("https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2016/03/521755-selva-amazonica-extensa-planeta.jpg?tf=3840x");
 }
