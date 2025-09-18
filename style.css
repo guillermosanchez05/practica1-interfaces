@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
+  display: flex;
+  flex-direction: column; /* Apilar header, main y footer en columna */
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 0 16px; /* quitamos padding-top, lo ponemos solo en main si hace falta */
+  /*
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   margin: 0;
   background-color: #e0e0e0;
   color: #333;
   padding: 12px 16px;
+  */
 }
 
 .cabecera_ajustada {
@@ -63,8 +71,13 @@ body {
 }
 
 .cuerpo {
+  flex: 1; /* <- esto empuja el footer hacia abajo */
+  display: block; /* se mantiene como bloque normal */
+  padding: 12px 0;
+  /*
   padding-right: 12px;
   overflow-y: scroll;
+  */
 }
 
 .col-izq {
@@ -104,5 +117,5 @@ body {
 }
 
 .pie {
-  padding-right: 24px;
+  margin-top: 10px;
 }
