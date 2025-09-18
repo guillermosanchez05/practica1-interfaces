@@ -12,13 +12,18 @@ body {
   border: 1px solid #000;
   background: #05b8bb;
   padding: 10px;
-  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .cabecera-left,
 .cabecera-center,
 .cabecera-right {
-  float: left;
-  width: 33.33%;
+  flex: 1;
+}
+
+.cabecera-left {
+  text-align: left;
 }
 
 .cabecera-left h1 {
