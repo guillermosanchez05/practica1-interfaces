@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column; /* Apilar header, main y footer en columna */
   font-family: "Atkinson Hyperlegible Next", sans-serif;
-  background-color: #e0e0e0;
+  background-color: #f4e08a;
   color: #333;
   padding: 0 16px; /* quitamos padding-top, lo ponemos solo en main si hace falta */
   /*
@@ -25,6 +25,7 @@ body {
 .cabecera-left,
 .cabecera-right {
   flex: 1;
+  color: #1f4e54;
 }
 
 .cabecera-left {
@@ -35,6 +36,7 @@ body {
   margin: 0;
   font-size: 24px;
   text-align: left;
+  color: #1f4e54;
 }
 
 .cabecera-center {
@@ -100,7 +102,7 @@ body {
 
 .caja {
   border: 1px solid #888;
-  background: #f2f2f2;
+  background-color: #b5d8dd;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
@@ -132,10 +134,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #1f4e54;
 }
 
 .flecha {
-  background-color: #04aa6d; /* Green */
+  background-color: #1f4e54;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -168,8 +171,8 @@ body {
 
 .footer-center a {
   text-decoration: none;
-  color: #000;
   padding: 6px 8px;
+  color: #1f4e54;
 }
 
 .footer-right {
