@@ -68,6 +68,11 @@ body {
   vertical-align: middle;
 }
 
+.logo-cabecera {
+  width: 60px;
+  height: 60px;
+}
+
 .cuerpo {
   flex: 1; /* <- esto empuja el footer hacia abajo */
   display: block; /* se mantiene como bloque normal */
