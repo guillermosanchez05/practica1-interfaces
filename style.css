@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
+  height: 175vh;
   display: flex;
-  flex-direction: column; /* Apilar header, main y footer en columna */
+  flex-direction: column;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   background-color: #f4e08a;
   color: #333;
@@ -10,6 +11,7 @@ body {
 }
 
 .cabecera_ajustada {
+  flex: 0.5; /* 5% de la página: 9+0.5+0.5 = 10*/
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -69,9 +71,9 @@ body {
 }
 
 .cuerpo {
+  flex: 9; /* 90% de la pagina: 9+0.5+0.5 = 10*/
   display: flex;
   padding: 12px 0;
-  height: 100vh;
 }
 
 .col-izq {
@@ -96,17 +98,32 @@ body {
 }
 
 .izq-peq-top {
-  flex: 2;
+  flex: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("https://www.shutterstock.com/image-photo/aerial-panoramic-view-hotel-zone-600nw-1790369885.jpg");
-  font-weight: bold;
-  font-size: x-large;
-  color: rgb(153, 11, 11);
+
+  /*Imagen de fondo*/
+  background-image: url("https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?cs=srgb&dl=pexels-rpnickson-2559941.jpg&fm=jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.txt-izq-peq-top {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px white;
+  color: #1f4e54;
+}
+
 .izq-grande-mid {
-  flex: 4;
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .izq-grande-bottom {
   flex: 4;
@@ -116,6 +133,7 @@ body {
 }
 
 .pie {
+  flex: 0.5;
   margin-top: 10px;
   padding: 10px;
   display: flex;
@@ -125,19 +143,40 @@ body {
 }
 
 .flecha {
+  /* Aspecto */
+  height: 15%;
+  width: 7%;
+  border-radius: 100%;
   background-color: #1f4e54;
   border: none;
   color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
+
+  /* Alineación */
+  margin: 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.packs-viajes {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 1.5%;
 }
 
 .pack-viaje1 {
+  flex: 1;
   background-image: url("https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2016/03/521755-selva-amazonica-extensa-planeta.jpg?tf=3840x");
+  color: white;
+}
+
+.pack-viaje1 h1 {
+  color: orange;
 }
 
 .footer-left,
