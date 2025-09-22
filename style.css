@@ -7,13 +7,6 @@ body {
   background-color: #f4e08a;
   color: #333;
   padding: 0 16px; /* quitamos padding-top, lo ponemos solo en main si hace falta */
-  /*
-  font-family: "Atkinson Hyperlegible Next", sans-serif;
-  margin: 0;
-  background-color: #e0e0e0;
-  color: #333;
-  padding: 12px 16px;
-  */
 }
 
 .cabecera_ajustada {
@@ -76,28 +69,21 @@ body {
 }
 
 .cuerpo {
-  flex: 1; /* <- esto empuja el footer hacia abajo */
-  display: block; /* se mantiene como bloque normal */
+  display: flex;
   padding: 12px 0;
-  /*
-  padding-right: 12px;
-  overflow-y: scroll;
-  */
+  height: 100vh;
 }
 
 .col-izq {
-  float: left;
-  width: calc(66.66% - 10px);
+  flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .col-der {
-  float: left;
-  width: 33.33%;
   margin-left: 10px;
-}
-
-.clear {
-  clear: both;
+  flex: 1;
+  display: flex;
 }
 
 .caja {
@@ -106,10 +92,11 @@ body {
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
+  border-radius: 5px;
 }
 
-.izq-peq {
-  height: 90px;
+.izq-peq-top {
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,14 +105,14 @@ body {
   font-size: x-large;
   color: rgb(153, 11, 11);
 }
-.izq-grande-1 {
-  height: 220px;
+.izq-grande-mid {
+  flex: 4;
 }
-.izq-grande-2 {
-  height: 240px;
+.izq-grande-bottom {
+  flex: 4;
 }
 .der-vertical {
-  height: 620px;
+  flex: 1;
 }
 
 .pie {
@@ -208,7 +195,7 @@ body {
 
 /*Version A*/
 .cuerpo_A {
-  text-align: center;            
+  text-align: center;
 }
 
 .contenedor_A {
@@ -217,7 +204,7 @@ body {
 
 .caja_A {
   border: 1px solid #888;
-  background-color: #b5d8dd; 
+  background-color: #b5d8dd;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
@@ -231,10 +218,10 @@ body {
 }
 
 .formA .campo {
-  float: left;          
-  width: 45%;           
-  margin-right: 5%;     
-  margin-bottom: 14px;  
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  margin-bottom: 14px;
 }
 
 .clear {
@@ -242,18 +229,15 @@ body {
 }
 
 .formA label {
-  display: block;       
-  margin-bottom: 6px;   
+  display: block;
+  margin-bottom: 6px;
 }
 
 .formA input {
-  width: 100%;          
-  height: 20px;         
-  padding: 6px;         
+  width: 100%;
+  height: 20px;
+  padding: 6px;
 }
-
-
-
 
 /*Version B*/
 .izq-peq-B {
@@ -269,30 +253,29 @@ body {
 /*Version C*/
 .caja_C {
   border: 1px solid #888;
-  background-color: #b5d8dd; 
+  background-color: #b5d8dd;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
 }
 
 .col-izq_C {
-  float: left;                  
-  width: calc(40% - 12px);      
+  float: left;
+  width: calc(40% - 12px);
 }
 
 .col-der_C {
-  float: left;                  
-  width: 60%;                   
-  margin-left: 12px;            
+  float: left;
+  width: 60%;
+  margin-left: 12px;
 }
 
-.izq-grande-1_C { 
-  height: 260px; 
-}  
-.izq-grande-2_C { 
-  height: 300px; 
-}  
-.der-vertical_C { 
-  height: 595px; 
-}  
-
+.izq-grande-1_C {
+  height: 260px;
+}
+.izq-grande-2_C {
+  height: 300px;
+}
+.der-vertical_C {
+  height: 595px;
+}
