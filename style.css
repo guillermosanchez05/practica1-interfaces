@@ -120,10 +120,11 @@ body {
 .izq-grande-mid {
   flex: 3;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .izq-grande-bottom {
   flex: 4;
@@ -142,10 +143,24 @@ body {
   color: #1f4e54;
 }
 
+.title-packs-viajes {
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.packs-viajes {
+  flex: 9;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
 .flecha {
   /* Aspecto */
   height: 15%;
-  width: 7%;
+  width: 6%;
   border-radius: 100%;
   background-color: #1f4e54;
   border: none;
@@ -162,23 +177,69 @@ body {
   text-decoration: none;
 }
 
-.packs-viajes {
-  display: flex;
-  width: 80%;
-  height: 100%;
-  margin: 1.5%;
-}
-
 .pack-viaje1 {
-  flex: 1;
-  background-image: url("https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2016/03/521755-selva-amazonica-extensa-planeta.jpg?tf=3840x");
+  width: 88%; /* 100 - 6 - 6 = 88*/
+  height: 100%;
+  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  /*background-repeat: no-repeat; no necesario en este caso*/
+  background-position: center;
   color: white;
+
+  position: relative;
 }
 
 .pack-viaje1 h1 {
   color: orange;
+  text-align: left;
+  margin-left: 5%;
+  font-size: 1.4rem;
 }
 
+.descripcion-pack {
+  text-align: left;
+  margin-left: 8%;
+}
+
+.container-compra-pack {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+}
+
+.comprar-pack {
+  border-radius: 10%;
+  background-color: #152dc7;
+  border-style: hidden;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1% 2%;
+  margin-right: 1rem;
+  text-decoration: none; /* quita el subrayado */
+}
+
+.precio-pack {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  padding: 1%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  /* Personalizar texto */
+  background-color: #152dc7;
+  border-radius: 10%;
+  border-style: hidden;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
 .footer-left,
 .footer-center,
 .footer-right {
