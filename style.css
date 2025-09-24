@@ -115,6 +115,8 @@ body {
 }
 .izq-grande-bottom {
   flex: 4;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .der-vertical {
   flex: 1;
@@ -203,7 +205,7 @@ body {
   font-weight: bold;
 }
 
-.titulo-experiencias {
+.titulo-grande-experiencias {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
@@ -214,6 +216,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: white;
 }
 
 .experiencia {
@@ -221,23 +226,55 @@ body {
   border-radius: 1rem;
 }
 
+.exp-title {
+  font-size: 1rem;
+  border-radius: 10%;
+  background-color: #152dc7;
+}
+
 .exp1 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://img.holidu.com/images/ee0af813-ef81-4970-8972-aa061df65444/m.jpg");
 }
 .exp2 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGP10cQUlaxSWsg-OUhkje2pQDFg5mVD9PQ&s");
 }
 .exp3 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://www.shutterstock.com/shutterstock/videos/3549843619/thumb/1.jpg?ip=x480");
 }
 .exp4 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://content-viajes.nationalgeographic.com.es/medio/2022/09/05/rovaniemi_28f35ec6_1200x800.jpg");
 }
 .exp5 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuxordE0fxvDLcz0nhXqZUI0x316Unn6zsng&s");
 }
 .exp6 {
-  background-image: url("https://images8.alphacoders.com/866/866198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTerHJmDXAMFfIQu-J6OwvVLyZvJj0jNAPGwg&s");
+}
+
+.ver-mas {
+  text-decoration: none;
+}
+
+.corazon {
+  text-decoration: none;
 }
 
 .pie {
