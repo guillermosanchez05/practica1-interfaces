@@ -132,7 +132,7 @@ body {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  align-items: center;
+  /*align-items: stretch;*/
 }
 
 .title-packs-viajes {
@@ -143,6 +143,7 @@ body {
 }
 
 .flecha {
+  align-self: center;
   height: 4rem;
   aspect-ratio: 1/1;
   border-radius: 100%;
@@ -159,9 +160,10 @@ body {
   text-decoration: none;
 }
 .pack-viaje1 {
+  align-self: stretch;
   flex: 1;
   height: 100%;
-  border-radius: 7%;
+  border-radius: 3rem;
   background-image: url("https://images8.alphacoders.com/866/866198.jpg");
   background-size: cover;
   background-position: center;
@@ -437,7 +439,6 @@ body {
     align-items: flex-start;
     text-align: center;
   }
-
   .cabecera-left h1 {
     text-align: center;
   }
@@ -459,13 +460,16 @@ body {
   /* Main: columnas apiladas */
   .cuerpo {
     flex-direction: column;
-    min-width: unset;
   }
 
   .col-izq,
   .col-der {
     width: 100%;
     margin: 0;
+  }
+
+  .pack-viaje1 {
+    min-height: 20rem;
   }
 
   /* Experiencias en 2 columnas */
