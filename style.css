@@ -16,6 +16,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #888;
+  background-color: #b5d8dd;
+  border-radius: 5px;
 }
 .cabecera-left,
 .cabecera-right {
@@ -303,6 +306,57 @@ body {
   text-decoration: none;
 }
 
+.formulario-registro {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.formulario-registro h1 {
+  margin-bottom: 0.5rem;
+}
+
+#usuario,
+#contraseña {
+  height: 1.5rem;
+}
+
+.boton-registro {
+  text-decoration: none;
+  color: white;
+  background-color: #152dc7;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.linea {
+  border-bottom: 2px solid black; /* línea de 2px */
+  padding-bottom: 0.5rem; /* espacio entre el contenido y la línea */
+  width: 70%;
+  margin: auto;
+}
+.container-textos-derecha {
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-derecha {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-derecha h1 {
+  font-size: 1.5rem;
+}
+
+.texto-derecha a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
 .pie {
   flex: 0.5;
   margin-top: 10px;
@@ -311,6 +365,9 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #1f4e54;
+  border: 1px solid #888;
+  background-color: #b5d8dd;
+  border-radius: 5px;
 }
 .footer-left,
 .footer-center,
