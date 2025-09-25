@@ -224,6 +224,8 @@ body {
 .experiencia {
   height: 12rem;
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .exp-title {
@@ -233,6 +235,27 @@ body {
 
 .span-exp {
   background-color: #152dc7;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.ver-mas {
+  color: white;
+  background-color: #152dc7;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.corazon {
+  font-size: 2rem;
+}
+
+.botones-exp {
+  margin: 0.5rem;
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .exp1 {
