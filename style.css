@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap");
 
 body {
-  height: 175vh;
+  min-height: 175vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
@@ -108,6 +109,7 @@ body {
   color: #1f4e54;
 }
 .izq-grande-mid {
+  min-height: 22rem;
   flex: 3;
   display: flex;
   flex-direction: column;
@@ -125,12 +127,6 @@ body {
   flex: 1;
 }
 
-.title-packs-viajes {
-  flex: 1;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 1.75rem;
-}
 .packs-viajes {
   flex: 9;
   justify-content: space-between;
@@ -138,8 +134,16 @@ body {
   width: 100%;
   align-items: center;
 }
+
+.title-packs-viajes {
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
 .flecha {
-  height: 15%;
+  height: 4rem;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background-color: #1f4e54;
@@ -155,7 +159,7 @@ body {
   text-decoration: none;
 }
 .pack-viaje1 {
-  width: 60%;
+  flex: 1;
   height: 100%;
   border-radius: 7%;
   background-image: url("https://images8.alphacoders.com/866/866198.jpg");
@@ -381,6 +385,9 @@ body {
 }
 .footer-center {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .footer-center a {
   text-decoration: none;
@@ -393,6 +400,7 @@ body {
   gap: 10px;
   align-items: right;
   margin-right: 8px;
+  margin-left: 8px;
 }
 .logo {
   height: 50px;
@@ -411,6 +419,123 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* BREAKPOINT ESPECIAL PARA FLECHAS*/
+@media (max-width: 1000px) {
+  .flecha {
+    height: 3.5rem;
+  }
+}
+
+/* BREAKPOINT TABLET 768 */
+
+@media (max-width: 768px) {
+  /* Header en columna */
+  .cabecera_ajustada {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  .cabecera-left h1 {
+    text-align: center;
+  }
+
+  .cabecera-center ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cabecera-left,
+  .cabecera-center,
+  .cabecera-right {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  /* Main: columnas apiladas */
+  .cuerpo {
+    flex-direction: column;
+    min-width: unset;
+  }
+
+  .col-izq,
+  .col-der {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Experiencias en 2 columnas */
+  .container-experiencias {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  /* Footer reorganizado */
+  .pie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+  }
+}
+
+/* ===================== */
+/* BREAKPOINT MÓVIL 600  */
+/* ===================== */
+@media (max-width: 600px) {
+  /* Header simplificado */
+  .cabecera_ajustada {
+    padding: 8px;
+  }
+  .cabecera-center ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Packs: ocupa todo */
+  .packs-viajes {
+    flex-direction: column;
+  }
+  .pack-viaje1 {
+    width: 100%;
+    height: 12rem;
+  }
+  .flecha {
+    display: none; /* ocultar flechas en móvil */
+  }
+
+  /* Experiencias en 1 columna */
+  .container-experiencias {
+    grid-template-columns: 1fr;
+  }
+
+  /* Formularios adaptados */
+  .formulario-registro {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .formulario-registro input {
+    width: 100%;
+  }
+
+  /* Footer más compacto */
+  .footer-right {
+    justify-content: center;
+  }
+  .footer-right .logo {
+    height: 40px;
+  }
 }
 
 /*Versión A */
@@ -489,7 +614,7 @@ body.version-a {
 .acciones-form {
   width: 90%;
   margin: 12px auto 0;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .chk-politica {
@@ -517,7 +642,6 @@ body.version-a {
   font-size: 14px;
   line-height: 20px;
 }
-
 
 /*Versión B*/
 .izq-peq-B {
