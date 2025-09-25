@@ -40,7 +40,6 @@ body {
   flex: 2;
 }
 .cabecera-center ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -228,6 +227,7 @@ body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   color: white;
+  margin-top: 3rem;
 }
 
 .experiencia {
@@ -474,6 +474,7 @@ body {
 
   /* Experiencias en 2 columnas */
   .container-experiencias {
+    margin-top: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
   }
@@ -494,9 +495,8 @@ body {
   }
 }
 
-/* ===================== */
 /* BREAKPOINT MÓVIL 600  */
-/* ===================== */
+
 @media (max-width: 600px) {
   /* Header simplificado */
   .cabecera_ajustada {
@@ -516,7 +516,7 @@ body {
     height: 12rem;
   }
   .flecha {
-    display: none; /* ocultar flechas en móvil */
+    display: none; /* ocultamos flechas en el móvil */
   }
 
   /* Experiencias en 1 columna */
@@ -539,6 +539,23 @@ body {
   }
   .footer-right .logo {
     height: 40px;
+  }
+
+  #usuario {
+    width: 29rem;
+  }
+
+  #contraseña {
+    width: 29rem;
+  }
+
+  #correo-electronico {
+    height: 1.5rem;
+  }
+
+  .check-button {
+    height: 1.75rem;
+    width: 1.75rem;
   }
 }
 
