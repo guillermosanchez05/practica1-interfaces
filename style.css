@@ -413,11 +413,12 @@ body {
   gap: 10px;
 }
 
-/*Versión A (como ya lo tenías)*/
+/*Versión A*/
 body.version-a,
 body.version-c {
   height: auto;
 }
+
 
 .cuerpo_A {
   display: block;
@@ -434,7 +435,7 @@ body.version-c {
   margin-bottom: 14px;
   text-align: center;
   width: 500px;
-  height: 500px;
+  height: 535px;
 }
 .formA {
   width: 90%;
@@ -461,6 +462,63 @@ body.version-c {
   border: 1px solid #333;
   box-sizing: border-box;
 }
+
+
+.formA p {
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+.subir-archivo {
+  width: 100px;            
+  height: 25px;            
+  text-align: center;      
+  background-color: #1f4e54;
+  color: white;
+  border-radius: 4px;      
+  margin-top: 6px;        
+}
+
+
+
+
+
+
+.acciones-form{
+  width: 90%;
+  margin: 12px auto 0;
+  overflow: hidden;        
+}
+
+
+.acciones-form .acepta{
+  float: left;
+  text-align: left;
+  line-height: 28px;        
+}
+
+
+.acciones-form .acepta input[type="checkbox"]{
+  vertical-align: middle;  
+  margin: 0 6px 0 0;        
+  position: relative;
+  top: -2px;                
+}
+
+
+.acciones-form .boton{
+  float: right;
+  background: #1f4e54;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;        
+}
+
 
 /*Versión B*/
 .izq-peq-B {
