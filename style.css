@@ -676,6 +676,96 @@ body.version-a {
   line-height: 20px;
 }
 
+@media (max-width: 768px) {
+  body.version-a .cuerpo_A {
+    padding: 10px;
+  }
+
+  body.version-a .caja_A {
+    width: 95%;         
+    height: auto;       
+  }
+
+  body.version-a .formA { width: 95%; }
+  body.version-a .formA .campo {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 12px;
+  }
+
+  body.version-a .formA input {
+    height: 34px;
+    padding: 6px 8px;
+  }
+
+  body.version-a .acciones-form { width: 95%; }
+  body.version-a .acciones-form .boton {
+    padding: 8px 14px;
+  }
+
+  body.version-a .subir-archivo {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+    body.version-a .formA .campo {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body.version-a .caja_A {
+    width: 100%;
+    padding: 12px;
+  }
+
+  body.version-a .formA { width: 100%; }
+  body.version-a .formA .campo {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  body.version-a .formA input {
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 16px;  
+  }
+
+  body.version-a .formA p {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  body.version-a .subir-archivo {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 4px;
+  }
+
+  body.version-a .acciones-form {
+    width: 100%;
+  }
+  body.version-a .chk-politica {
+    display: block;       
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  body.version-a .acciones-form .boton {
+    float: none;          
+    display: block;
+    width: 100%;          
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+
 /*Versión B*/
 .logo-cabecera-2 {
   width: 120px;
@@ -954,4 +1044,53 @@ body.version-c{
   cursor: pointer;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (max-width: 768px) {
+  body.version-c .col-izq_C,
+  body.version-c .col-der_C {
+    float: none;          
+    width: 100%;          
+    margin-left: 0;       
+    margin-bottom: 12px;  
+  }
+
+  body.version-c .der-vertical_C,
+  body.version-c .izq-grande-2_C {
+    height: auto;
+  }
+
+  body.version-c .formC .campo {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  body.version-c .formC .campo2 {
+    width: 48%;
+    margin-right: 4%;
+  }
+  body.version-c .formC .campo2:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body.version-c .formC .campo2 {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  body.version-c .caja_C .pack-viaje1 {
+    height: 180px; 
+  }
+
+  body.version-c .formC .acciones {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  body.version-c .formC .acciones button {
+    width: 100%;
+  }
 }
