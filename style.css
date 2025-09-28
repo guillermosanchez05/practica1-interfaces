@@ -6,8 +6,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
-  background-color: #f4e08a;
-  color: #333;
+  background-color: #E6F9F7;
+  color: #0F2F2F;
   padding: 0 16px;
 }
 
@@ -17,8 +17,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #888;
-  background-color: #b5d8dd;
+  border: 1px solid #008080;
+  background-color: #40E0D0;
   border-radius: 5px;
 }
 .cabecera-left,
@@ -49,7 +49,7 @@ body {
 }
 .cabecera-center a {
   text-decoration: none;
-  color: #000;
+  color: #143C3C;
   padding: 6px 8px;
 }
 .cabecera-right {
@@ -84,8 +84,8 @@ body {
   display: flex;
 }
 .caja {
-  border: 1px solid #888;
-  background-color: #b5d8dd;
+  border: 1px solid #008080;
+  background-color: #CFF3EF;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
@@ -131,7 +131,6 @@ body {
   justify-content: space-between;
   display: flex;
   width: 100%;
-  /*align-items: stretch;*/
 }
 
 .title-packs-viajes {
@@ -170,7 +169,7 @@ body {
   position: relative;
 }
 .pack-viaje1 h1 {
-  color: orange;
+  color: #FFD700;
   text-align: left;
   margin-left: 5%;
   font-size: 1.4rem;
@@ -189,7 +188,7 @@ body {
 }
 .comprar-pack {
   border-radius: 10%;
-  background-color: #152dc7;
+  background-color: #1f4e54;
   border-style: hidden;
   color: white;
   font-size: 1rem;
@@ -205,7 +204,7 @@ body {
   display: flex;
   text-align: center;
   align-items: center;
-  background-color: #152dc7;
+  background-color: #1f4e54;
   border-radius: 10%;
   border-style: hidden;
   color: white;
@@ -243,14 +242,14 @@ body {
 }
 
 .span-exp {
-  background-color: #152dc7;
+  background-color: #1f4e54;
   padding: 0.1rem;
   border-radius: 0.5rem;
 }
 
 .ver-mas {
   color: white;
-  background-color: #152dc7;
+  background-color: #1f4e54;
   padding: 0.2rem;
   border-radius: 0.5rem;
 }
@@ -331,13 +330,13 @@ body {
 .boton-registro {
   text-decoration: none;
   color: white;
-  background-color: #152dc7;
+  background-color: #1f4e54;
   padding: 0.2rem;
   border-radius: 0.5rem;
 }
 
 .linea {
-  border-bottom: 2px solid black; /* línea de 2px */
+  border-bottom: 2px solid #143C3C; /* línea de 2px */
   padding-bottom: 0.5rem; /* espacio entre el contenido y la línea */
   width: 70%;
   margin: auto;
@@ -361,6 +360,7 @@ body {
   text-decoration: none;
   font-size: 1.25rem;
   margin-top: 0.25rem;
+  color: #143C3C
 }
 
 .pie {
@@ -370,9 +370,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #1f4e54;
-  border: 1px solid #888;
-  background-color: #b5d8dd;
+  color: #0F2F2F;
+  border: 1px solid #008080;
+  background-color: #40E0D0;
   border-radius: 5px;
 }
 .footer-left,
@@ -394,7 +394,7 @@ body {
 .footer-center a {
   text-decoration: none;
   padding: 6px 8px;
-  color: #1f4e54;
+  color: #143C3C;
 }
 .footer-right {
   display: flex;
@@ -579,8 +579,8 @@ body.version-a {
 
 
 .caja_A {
-  border: 1px solid #888;
-  background-color: #b5d8dd;
+  border: 1px solid #008080;
+  background-color: #CFF3EF;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
@@ -710,7 +710,7 @@ body.version-a {
 
 .boton-cerrar-B {
   text-decoration: none;
-  background-color: #152dc7;
+  background-color: #1f4e54;
   color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 0.5rem;
@@ -782,7 +782,7 @@ body.version-a {
   margin-top: 6px;
 }
 .acciones-B button {
-  background: #152dc7;
+  background: #1f4e54;
   color: white;
   padding: 6px 12px;
   border: none;
@@ -820,8 +820,8 @@ body.version-c{
   padding: 12px 0;
 }
 .caja_C {
-  border: 1px solid #888;
-  background-color: #b5d8dd;
+  border: 1px solid #008080;
+  background-color: #CFF3EF;
   padding: 10px;
   margin-bottom: 14px;
   text-align: center;
@@ -862,7 +862,7 @@ body.version-c{
 
 .caja_C .pack-viaje1 .titulo-pack {
   margin: 0 0 6px 0;
-  color: orange;
+  color: #FFD700;
   font-size: 1.2rem;
 }
 
@@ -875,7 +875,7 @@ body.version-c{
 .caja_C .pack-viaje1 .precio-pack {
   margin: 0;
   padding: 6px 10px;
-  background: #152dc7;
+  background: #1f4e54;
   border-radius: 8px;
   font-weight: 700;
 }
@@ -946,8 +946,8 @@ body.version-c{
 
 
 .formC .acciones button{
-  background: #e9eef0;    
-  color: #000;
+  background: #1f4e54;    
+  color: #fff;
   border: 1px solid #333;
   padding: 6px;
   border-radius: 8px;        
