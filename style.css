@@ -888,13 +888,15 @@ body.version-a {
 
 /*Versión C*/
 body.version-c {
-  height: auto;
+  height: 100%;
   min-height: 100vh;
+  align-items: stretch;
 }
 
 .cuerpo_C {
-  display: block;
+  display: flex;
   padding: 12px 0;
+  align-items: stretch;
 }
 .caja_C {
   border: 1px solid #008080;
@@ -904,27 +906,38 @@ body.version-c {
   text-align: center;
 }
 .col-izq_C {
-  float: left;
+  display: flex;
+  flex-direction: column;
   width: calc(40% - 12px);
 }
 .col-der_C {
-  float: left;
   width: 60%;
   margin-left: 12px;
+  display: flex;
+}
+.container-imagen-pack-c {
+  width: auto;
 }
 
 .izq-grande-2_C {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
 }
+
+.titulo-version-c {
+  text-align: center;
+  justify-content: center;
+}
+
+.parrafo-desc-pack-c {
+  text-align: justify;
+}
+
 .der-vertical_C {
-  height: 595px;
+  flex: 1;
 }
 
-.clear_C {
-  clear: both;
-}
-
-.caja_C .pack-viaje1 {
+.container-imagen-pack-c .pack-viaje1 {
   flex: 1;
   height: 236px;
   border-radius: 12px;
@@ -936,17 +949,17 @@ body.version-c {
   padding: 12px;
 }
 
-.caja_C .pack-viaje1 .titulo-pack {
+.container-imagen-pack-c .pack-viaje1 .titulo-pack {
   margin: 0 0 6px 0;
   color: #ffd700;
   font-size: 1.2rem;
 }
 
-.caja_C .pack-viaje1 .descripcion-pack {
+.container-imagen-pack-c .pack-viaje1 .descripcion-pack {
   margin: 8px;
 }
 
-.caja_C .pack-viaje1 .precio-pack {
+.container-imagen-pack-c .pack-viaje1 .precio-pack {
   margin: 0;
   padding: 6px 10px;
   background: #1f4e54;
@@ -957,25 +970,39 @@ body.version-c {
 .formC {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
+.formC-mid,
+.formC-top {
+  justify-content: center;
+}
+
+.formC-bottom {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
 .formC .campo {
-  float: left;
-  width: 100%;
-  margin-right: 5%;
-  margin-bottom: 14px;
+  margin-top: 1rem;
+}
+
+.formC .correo {
+  margin-bottom: 3rem;
 }
 
 .formC .campo2 {
-  float: left;
-  width: 20%;
-  margin-right: 5%;
-  margin-bottom: 14px;
+  margin-top: 1rem;
 }
 
-.formC label {
-  display: block;
-  margin-bottom: 6px;
+.formC .select-tarjeta {
+  margin-top: 1rem;
+  justify-self: flex-start;
+}
+
+.parrafo-form-c {
+  margin: 0;
 }
 
 .formC input {
@@ -987,13 +1014,6 @@ body.version-c {
   box-sizing: border-box;
 }
 
-.formC .select-tarjeta {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-align: left;
-}
-
 .formC .select-tarjeta select {
   height: 28px;
   padding: 4px 8px;
@@ -1002,70 +1022,61 @@ body.version-c {
   width: auto;
   min-width: 120px;
 }
-
 .formC .acciones {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 50px;
+  justify-content: space-evenly;
 }
 
 .formC .acciones button {
   background: #1f4e54;
   color: #fff;
   border: 1px solid #333;
-  padding: 6px;
+  padding: 8px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   line-height: 20px;
 }
 
+/* BREAKPOINT PARA VERSION C (LUEGO HAY QUE JUNTAR TODO)*/
 @media (max-width: 768px) {
-  body.version-c .col-izq_C,
-  body.version-c .col-der_C {
-    float: none;
+  .cuerpo_C {
+    flex-direction: column;
+  }
+  .col-izq_C {
+    flex-direction: row;
     width: 100%;
-    margin-left: 0;
-    margin-bottom: 12px;
+    justify-content: space-between;
+    gap: 1rem;
   }
 
-  body.version-c .der-vertical_C,
-  body.version-c .izq-grande-2_C {
-    height: auto;
-  }
-
-  body.version-c .formC .campo {
+  .col-der_C {
     width: 100%;
-    margin-right: 0;
+    margin: 0;
   }
 
-  body.version-c .formC .campo2 {
-    width: 48%;
-    margin-right: 4%;
+  .izq-grande-2_C {
+    width: 50%;
+    flex-direction: column;
   }
-  body.version-c .formC .campo2:nth-of-type(2n) {
-    margin-right: 0;
+  .container-imagen-pack-c {
+    width: 50%;
+    align-items: center;
+    display: flex;
+  }
+
+  .formC .acciones {
+    margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 600px) {
-  body.version-c .formC .campo2 {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  body.version-c .caja_C .pack-viaje1 {
-    height: 180px;
-  }
-
-  body.version-c .formC .acciones {
+  .col-izq_C {
     flex-direction: column;
-    gap: 12px;
-    margin-top: 24px;
   }
-  body.version-c .formC .acciones button {
+
+  .container-imagen-pack-c {
     width: 100%;
+    display: flex;
   }
 }
