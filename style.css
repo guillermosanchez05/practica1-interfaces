@@ -873,9 +873,10 @@ body.version-a {
 }
 
 /*Versión B*/
-.logo-cabecera-2 {
+.imagen-perfil-usuario {
   width: 160px;
   height: 130px;
+  border-radius: 5px;
 }
 
 .logo-cabecera-3 {
