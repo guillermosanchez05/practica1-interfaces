@@ -593,13 +593,6 @@ body {
   }
 }
 
-/* BREAKPOINT ESPECIAL PARA contenedor_A*/
-@media (max-width: 1400px) {
-  .contenedor_A {
-    width: 60%;
-  }
-}
-
 /*Versión A */
 body.version-a {
   height: auto;
@@ -615,7 +608,7 @@ body.version-a {
 }
 
 .contenedor_A {
-  width: 40%;
+  width: 40rem;
   height: 100%;
 }
 
@@ -634,11 +627,14 @@ body.version-a {
 
 .titulo-caja-a {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .formA {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
+  align-items: baseline;
 }
 
 .formA-top {
@@ -646,13 +642,14 @@ body.version-a {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .formA-bottom {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .formA .campo {
@@ -669,7 +666,7 @@ body.version-a {
 
 .formA-fecha-nac {
   width: 40%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .formA .parrafo-form-a {
@@ -678,6 +675,10 @@ body.version-a {
 
 .formA-fecha-nac .parrafo-form-a {
   align-self: self-start;
+}
+
+.parrafo-bottom-form-a {
+  text-align: left;
 }
 
 .formA label {
@@ -709,7 +710,7 @@ body.version-a {
 
 .acciones-form {
   width: 90%;
-  margin: 12px auto 0;
+  margin-top: 2rem;
   overflow: hidden;
 }
 
@@ -743,14 +744,19 @@ body.version-a {
   body.version-a .cuerpo_A {
     flex-direction: row;
     width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 
   .contenedor_A {
+    width: 100%;
+    box-sizing: border-box;
   }
 
   body.version-a .caja_A {
-    width: 95%;
-    height: auto;
+    box-sizing: border-box;
   }
 
   body.version-a .formA {
