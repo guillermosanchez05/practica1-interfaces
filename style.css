@@ -74,6 +74,7 @@ body {
 .logo-cabecera {
   width: 60px;
   height: 60px;
+  border-radius: 5px;
 }
 
 .cuerpo {
@@ -112,9 +113,15 @@ body {
 .txt-izq-peq-top {
   font-size: 2rem;
   font-weight: bold;
-  text-shadow: 1px 1px white;
-  color: #1f4e54;
+  color: white;
 }
+
+.span-viajes-mochileros {
+  background-color: #4f8f97;
+  border-radius: 1rem;
+  padding: 5px 10px;
+}
+
 .izq-grande-mid {
   min-height: 22rem;
   flex: 3;
@@ -148,6 +155,12 @@ body {
   font-size: 1.75rem;
 }
 
+.titulo-pack-span {
+  background-color: #1f4e54;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
 .flecha {
   align-self: center;
   height: 4rem;
@@ -177,11 +190,18 @@ body {
   position: relative;
 }
 .pack-viaje1 h1 {
-  color: #ffd700;
+  color: white;
   text-align: left;
   margin-left: 5%;
   font-size: 1.4rem;
 }
+
+.span-descripcion-pack {
+  background-color: #4f8f97;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
 .descripcion-pack {
   text-align: left;
   margin-left: 8%;
@@ -251,7 +271,7 @@ body {
 
 .span-exp {
   background-color: #1f4e54;
-  padding: 0.1rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
 }
 
@@ -455,10 +475,14 @@ body {
   gap: 10px;
 }
 
-/* BREAKPOINT ESPECIAL PARA FLECHAS*/
+/* BREAKPOINT ESPECIAL PARA ELEMENTOS PEQUEÑOS*/
 @media (max-width: 1000px) {
   .flecha {
     height: 3.5rem;
+  }
+
+  .txt-izq-peq-top {
+    font-size: 1.51rem;
   }
 }
 
@@ -561,6 +585,10 @@ body {
   /* Experiencias en 1 columna */
   .container-experiencias {
     grid-template-columns: 1fr;
+  }
+
+  .exp4 {
+    background-position: bottom;
   }
 
   /* Formularios adaptados */
@@ -919,6 +947,11 @@ body.version-a {
   display: flex;
   flex-direction: column;
 }
+
+.container-consejos {
+  margin: 1rem;
+}
+
 .texto-derecha-B h1 {
   font-size: 1.1rem;
 }
@@ -950,8 +983,12 @@ body.version-a {
   cursor: pointer;
 }
 
+#input-consejo {
+  width: 50%;
+}
+
 .calendario-B {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 .calendario-B img {
@@ -976,6 +1013,7 @@ body.version-c {
   display: flex;
   padding: 12px 0;
   align-items: stretch;
+  height: 75vh;
 }
 .caja_C {
   border-radius: 5px;
@@ -998,6 +1036,7 @@ body.version-c {
 
 .izq-grande-2_C {
   display: flex;
+  flex: 2;
   flex-direction: column;
 }
 
@@ -1010,13 +1049,22 @@ body.version-c {
   text-align: justify;
 }
 
+/* BREAKPOINT ESPECIAL PARA TEXTO DESCRIPCIÓN PACK*/
+@media (max-width: 1070px) {
+  .parrafo-desc-pack-c {
+    font-size: 0.95rem;
+  }
+}
+
 .der-vertical_C {
   flex: 1;
 }
 
 .container-imagen-pack-c {
+  flex: 1;
   width: auto;
   display: flex;
+  min-width: 284px;
 }
 
 .packs-viajes-c {
@@ -1039,15 +1087,22 @@ body.version-c {
   position: relative;
 }
 
+.titulo-pack-span-c {
+  background-color: #1f4e54;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
 .container-imagen-pack-c .pack-viaje1-c .titulo-pack {
-  margin: 0 0 6px 0;
-  color: #ffd700;
+  margin: 6px 0 20px 0;
+  color: white;
   font-size: 1.2rem;
   text-align: left;
 }
 
-.container-imagen-pack-c .pack-viaje1-c .descripcion-pack {
+.container-imagen-pack-c .pack-viaje1-c .descripcion-pack-c {
   margin: 8px;
+  text-align: left;
 }
 
 .container-imagen-pack-c .pack-viaje1-c .precio-pack {
@@ -1150,9 +1205,15 @@ body.version-c {
     width: 50%;
     flex-direction: column;
   }
+
   .container-imagen-pack-c {
+    min-width: 0;
     width: 40%;
     align-items: center;
+  }
+
+  .parrafo-desc-pack-c {
+    font-size: 1rem;
   }
 
   .formC .acciones {
