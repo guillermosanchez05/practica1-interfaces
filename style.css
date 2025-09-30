@@ -879,6 +879,10 @@ body.version-a {
   border-radius: 5px;
 }
 
+#texto-usuario {
+  font-weight: bold;
+}
+
 .logo-cabecera-3 {
   width: 120px;
   height: 130px;
