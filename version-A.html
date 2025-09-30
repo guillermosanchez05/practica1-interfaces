@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="logo_web.JPG" />
     <title>Mochileros viajeros</title>
   </head>
   <body class="version-a">
@@ -38,46 +39,46 @@
     <main class="cuerpo_A">
       <div class="contenedor_A">
         <div class="caja_A">
-          <h2>Registro de nuevos usuarios</h2>
+          <h2 class="titulo-caja-a">Registro de nuevos usuarios</h2>
           <form class="formA">
-            <div class="campo">
-              <label for="nombre">Nombre</label>
-              <input type="text" id="nombre" name="nombre" />
+            <div class="formA-top">
+              <div class="campo">
+                <p class="parrafo-form-a">Nombre</p>
+                <input type="text" id="nombre" name="nombre" />
+              </div>
+
+              <div class="campo">
+                <p class="parrafo-form-a">Apellidos</p>
+                <input type="text" id="apellidos" name="apellidos" />
+              </div>
+
+              <div class="campo">
+                <p class="parrafo-form-a">Correo electrónico</p>
+                <input type="email" id="correo" name="correo" />
+              </div>
+
+              <div class="campo">
+                <p class="parrafo-form-a">Confirmar correo</p>
+                <input type="email" id="correo2" name="correo2" />
+              </div>
+            </div>
+            <div class="formA-fecha-nac">
+              <div class="campo">
+                <p class="parrafo-form-a">Fecha de nacimiento</p>
+                <input type="date" id="fecha" name="fecha" />
+              </div>
+            </div>
+            <div class="formA-bottom">
+              <div class="campo">
+                <p class="parrafo-form-a">Login</p>
+                <input type="text" id="login" name="login" />
+              </div>
+              <div class="campo">
+                <p class="parrafo-form-a">Password</p>
+                <input type="password" id="password" name="password" />
+              </div>
             </div>
 
-            <div class="campo">
-              <label for="apellidos">Apellidos</label>
-              <input type="text" id="apellidos" name="apellidos" />
-            </div>
-            <div class="clear"></div>
-
-            <div class="campo">
-              <label for="correo">Correo electrónico</label>
-              <input type="email" id="correo" name="correo" />
-            </div>
-
-            <div class="campo">
-              <label for="correo2">Confirmar correo</label>
-              <input type="email" id="correo2" name="correo2" />
-            </div>
-            <div class="clear"></div>
-
-            <div class="campo">
-              <label for="fecha">Fecha de nacimiento</label>
-              <input type="date" id="fecha" name="fecha" />
-            </div>
-            <div class="clear"></div>
-
-            <div class="campo">
-              <label for="login">Login</label>
-              <input type="text" id="login" name="login" />
-            </div>
-
-            <div class="campo">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password" />
-            </div>
-            <div class="clear"></div>
             <p>Subir imagen de perfil</p>
             <label for="imagen" class="subir-archivo">Examinar...</label>
             <input
