@@ -105,7 +105,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("fondo-para-slogan.jpg");
+  background-image: url("Imagenes/fondo-para-slogan.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1018,7 +1018,7 @@ body.version-c {
   display: flex;
   padding: 12px 0;
   align-items: stretch;
-  height: 75vh;
+  height: auto;
 }
 .caja_C {
   border-radius: 5px;
