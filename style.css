@@ -620,17 +620,16 @@ body {
 
   .col-der_C {
     width: 100%;
-    margin: 0;
   }
 
   .izq-grande-2_C {
-    width: 50%;
+    flex: 6;
     flex-direction: column;
   }
 
   .container-imagen-pack-c {
     min-width: 0;
-    width: 40%;
+    flex: 4;
     align-items: center;
   }
 
@@ -1069,6 +1068,7 @@ body.version-c {
   padding: 12px 0;
   align-items: stretch;
   height: auto;
+  gap: 12px;
 }
 .caja_C {
   border-radius: 5px;
@@ -1085,7 +1085,6 @@ body.version-c {
 }
 .col-der_C {
   flex: 6.5;
-  margin-left: 12px;
   display: flex;
 }
 
@@ -1238,4 +1237,3 @@ body.version-c {
   font-size: 14px;
   line-height: 20px;
 }
-
