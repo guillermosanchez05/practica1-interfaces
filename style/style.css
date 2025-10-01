@@ -524,6 +524,7 @@ body.version-a {
   grid-template-rows: 1fr 1fr;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 .formA-bottom {
@@ -531,6 +532,7 @@ body.version-a {
   justify-content: flex-start;
   gap: 1rem;
   margin-bottom: 4rem;
+  padding: 0;
 }
 
 .formA .campo {
@@ -548,6 +550,7 @@ body.version-a {
 .formA-fecha-nac {
   width: 40%;
   margin-bottom: 1rem;
+  padding: 0;
 }
 
 .formA-top,
@@ -558,7 +561,6 @@ body.version-a {
 .formC-bottom {
   border: none;
 }
-
 .formA .parrafo-form-a {
   margin-left: 0;
 }
@@ -892,6 +894,9 @@ body.version-c {
   margin-bottom: 3rem;
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .formC .campo {
   margin-top: 1rem;
