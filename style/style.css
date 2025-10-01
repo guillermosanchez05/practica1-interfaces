@@ -552,7 +552,10 @@ body.version-a {
 
 .formA-top,
 .formA-fecha-nac,
-.formA-bottom {
+.formA-bottom,
+.formC-top,
+.formC-mid,
+.formC-bottom {
   border: none;
 }
 
