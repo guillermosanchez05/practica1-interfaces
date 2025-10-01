@@ -474,305 +474,6 @@ body {
   gap: 10px;
 }
 
-/* BREAKPOINT ESPECIAL PARA ELEMENTOS PEQUEÑOS*/
-@media (max-width: 1000px) {
-  .flecha {
-    height: 3.5rem;
-  }
-
-  .txt-izq-peq-top {
-    font-size: 1.51rem;
-  }
-}
-
-/* BREAKPOINT TABLET 768 */
-
-@media (max-width: 768px) {
-  /* Header en columna */
-  .cabecera_ajustada {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: center;
-  }
-  .cabecera-left h1 {
-    text-align: center;
-  }
-
-  .cabecera-center ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .cabecera-left,
-  .cabecera-center,
-  .cabecera-right {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    text-align: center;
-  }
-
-  /* Main: columnas apiladas */
-  .cuerpo {
-    flex-direction: column;
-  }
-
-  .col-izq,
-  .col-der {
-    width: 100%;
-    margin: 0;
-  }
-
-  .pack-viaje1 {
-    min-height: 20rem;
-  }
-
-  /* Experiencias en 2 columnas */
-  .container-experiencias {
-    margin-top: 0;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-  }
-
-  /* Footer reorganizado */
-  .pie {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-left,
-  .footer-center,
-  .footer-right {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .checkboxes-B {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  body.version-a .cuerpo_A {
-    flex-direction: row;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .contenedor_A {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  body.version-a .caja_A {
-    box-sizing: border-box;
-  }
-
-  body.version-a .formA {
-    width: 95%;
-  }
-  body.version-a .formA .campo {
-    width: 48%;
-    margin-right: 4%;
-    margin-bottom: 12px;
-  }
-
-  body.version-a .formA input {
-    height: 34px;
-    padding: 6px 8px;
-  }
-
-  body.version-a .acciones-form {
-    width: 95%;
-  }
-  body.version-a .acciones-form .boton {
-    padding: 8px 14px;
-  }
-
-  body.version-a .subir-archivo {
-    width: 120px;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  body.version-a .formA .campo {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-
-  .cuerpo_C {
-    flex-direction: column;
-  }
-  .col-izq_C {
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    gap: 0.5rem;
-  }
-
-  .col-der_C {
-    width: 100%;
-  }
-
-  .izq-grande-2_C {
-    flex: 6;
-    flex-direction: column;
-  }
-
-  .container-imagen-pack-c {
-    min-width: 0;
-    flex: 4;
-    align-items: center;
-  }
-
-  .parrafo-desc-pack-c {
-    font-size: 1rem;
-  }
-
-  .formC .acciones {
-    margin-bottom: 1rem;
-  }
-}
-
-/* BREAKPOINT MÓVIL 600  */
-
-@media (max-width: 600px) {
-  /* Header simplificado */
-  .cabecera_ajustada {
-    padding: 8px;
-  }
-  .cabecera-center ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  /* Packs: ocupa todo */
-  .packs-viajes {
-    flex-direction: column;
-  }
-  .pack-viaje1 {
-    width: 100%;
-    height: 12rem;
-  }
-  .flecha {
-    display: none; /* ocultamos flechas en el móvil */
-  }
-
-  /* Experiencias en 1 columna */
-  .container-experiencias {
-    grid-template-columns: 1fr;
-  }
-
-  .exp4 {
-    background-position: bottom;
-  }
-
-  /* Formularios adaptados */
-  .formulario-registro {
-    width: 100%;
-    padding: 0.5rem;
-  }
-  .formulario-registro input {
-    width: 100%;
-  }
-
-  /* Footer más compacto */
-  .footer-right {
-    justify-content: center;
-  }
-  .footer-right .logo {
-    height: 40px;
-  }
-
-  #usuario {
-    width: 29rem;
-  }
-
-  #contraseña {
-    width: 29rem;
-  }
-
-  #correo-electronico {
-    height: 1.5rem;
-  }
-
-  body.version-a .caja_A {
-    width: 100%;
-    padding: 12px;
-  }
-
-  body.version-a .formA {
-    width: 100%;
-  }
-  body.version-a .formA .campo {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-
-  body.version-a .formA input {
-    height: 36px;
-    padding: 6px 10px;
-    font-size: 16px;
-  }
-
-  body.version-a .formA p {
-    margin-left: 0;
-    text-align: left;
-  }
-
-  body.version-a .subir-archivo {
-    width: 110px;
-    height: 30px;
-    line-height: 30px;
-    margin-top: 4px;
-  }
-
-  body.version-a .acciones-form {
-    width: 100%;
-  }
-  body.version-a .chk-politica {
-    display: block;
-    text-align: left;
-    margin-bottom: 8px;
-  }
-  body.version-a .acciones-form .boton {
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .col-izq_C {
-    flex-direction: column;
-    width: 100%;
-  }
-  .izq-grande-2_C {
-    width: 100%;
-  }
-  .container-imagen-pack-c {
-    width: 100%;
-  }
-
-  .izq-grande-2_C,
-  .container-imagen-pack-c {
-    box-sizing: border-box;
-  }
-
-  .titulo-desc-pack-c {
-    margin-bottom: 0;
-  }
-}
-
 /*Versión A */
 body.version-a {
   height: auto;
@@ -1235,4 +936,303 @@ body.version-c {
   cursor: pointer;
   font-size: 14px;
   line-height: 20px;
+}
+
+/* BREAKPOINT ESPECIAL PARA ELEMENTOS PEQUEÑOS*/
+@media (max-width: 1000px) {
+  .flecha {
+    height: 3.5rem;
+  }
+
+  .txt-izq-peq-top {
+    font-size: 1.51rem;
+  }
+}
+
+/* BREAKPOINT TABLET 768 */
+
+@media (max-width: 768px) {
+  /* Header en columna */
+  .cabecera_ajustada {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .cabecera-left h1 {
+    text-align: center;
+  }
+
+  .cabecera-center ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cabecera-left,
+  .cabecera-center,
+  .cabecera-right {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  /* Main: columnas apiladas */
+  .cuerpo {
+    flex-direction: column;
+  }
+
+  .col-izq,
+  .col-der {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pack-viaje1 {
+    min-height: 20rem;
+  }
+
+  /* Experiencias en 2 columnas */
+  .container-experiencias {
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  /* Footer reorganizado */
+  .pie {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .checkboxes-B {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  body.version-a .cuerpo_A {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contenedor_A {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body.version-a .caja_A {
+    box-sizing: border-box;
+  }
+
+  body.version-a .formA {
+    width: 95%;
+  }
+  body.version-a .formA .campo {
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 12px;
+  }
+
+  body.version-a .formA input {
+    height: 34px;
+    padding: 6px 8px;
+  }
+
+  body.version-a .acciones-form {
+    width: 95%;
+  }
+  body.version-a .acciones-form .boton {
+    padding: 8px 14px;
+  }
+
+  body.version-a .subir-archivo {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  body.version-a .formA .campo {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .cuerpo_C {
+    flex-direction: column;
+  }
+  .col-izq_C {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .col-der_C {
+    width: 100%;
+  }
+
+  .izq-grande-2_C {
+    flex: 6;
+    flex-direction: column;
+  }
+
+  .container-imagen-pack-c {
+    min-width: 0;
+    flex: 4;
+    align-items: center;
+  }
+
+  .parrafo-desc-pack-c {
+    font-size: 1rem;
+  }
+
+  .formC .acciones {
+    margin-bottom: 1rem;
+  }
+}
+
+/* BREAKPOINT MÓVIL 600  */
+
+@media (max-width: 600px) {
+  /* Header simplificado */
+  .cabecera_ajustada {
+    padding: 8px;
+  }
+  .cabecera-center ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Packs: ocupa todo */
+  .packs-viajes {
+    flex-direction: column;
+  }
+  .pack-viaje1 {
+    width: 100%;
+    height: 12rem;
+  }
+  .flecha {
+    display: none; /* ocultamos flechas en el móvil */
+  }
+
+  /* Experiencias en 1 columna */
+  .container-experiencias {
+    grid-template-columns: 1fr;
+  }
+
+  .exp4 {
+    background-position: bottom;
+  }
+
+  /* Formularios adaptados */
+  .formulario-registro {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .formulario-registro input {
+    width: 100%;
+  }
+
+  /* Footer más compacto */
+  .footer-right {
+    justify-content: center;
+  }
+  .footer-right .logo {
+    height: 40px;
+  }
+
+  #usuario {
+    width: 29rem;
+  }
+
+  #contraseña {
+    width: 29rem;
+  }
+
+  #correo-electronico {
+    height: 1.5rem;
+  }
+
+  body.version-a .caja_A {
+    width: 100%;
+    padding: 12px;
+  }
+
+  body.version-a .formA {
+    width: 100%;
+  }
+  body.version-a .formA .campo {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  body.version-a .formA input {
+    height: 36px;
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  body.version-a .formA p {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  body.version-a .subir-archivo {
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 4px;
+  }
+
+  body.version-a .acciones-form {
+    width: 100%;
+  }
+  body.version-a .chk-politica {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+  body.version-a .acciones-form .boton {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .col-izq_C {
+    flex-direction: column;
+    width: 100%;
+  }
+  .izq-grande-2_C {
+    width: 100%;
+  }
+  .container-imagen-pack-c {
+    width: 100%;
+  }
+
+  .izq-grande-2_C,
+  .container-imagen-pack-c {
+    box-sizing: border-box;
+  }
+
+  .titulo-desc-pack-c {
+    margin-bottom: 0;
+  }
 }
