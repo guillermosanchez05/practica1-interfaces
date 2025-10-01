@@ -550,6 +550,12 @@ body.version-a {
   margin-bottom: 1rem;
 }
 
+.formA-top,
+.formA-fecha-nac,
+.formA-bottom {
+  border: none;
+}
+
 .formA .parrafo-form-a {
   margin-left: 0;
 }
