@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/style.css">
   <link rel="icon" type="image/x-icon" href="logo_web.JPG">
   <title>Mochileros viajeros</title>
 </head>
@@ -12,6 +12,7 @@
     <div class="cabecera-left">
       <h1>Mochileros viajeros</h1>
     </div>
+
 
     <div class="cabecera-center">
       <nav aria-label="Navegación principal">
@@ -25,8 +26,9 @@
       </nav>
     </div>
 
+
     <div class="cabecera-right">
-      <img src="Imagenes/logo_web.JPG" class = "logo-cabecera" alt="Logo">
+      <img src="imagenes/logo_web.JPG" class = "logo-cabecera" alt="Logo">
       <label for="idioma">Idioma</label>
       <select id="idioma" name="idioma">
         <option value="es" selected>ES</option>
@@ -36,7 +38,9 @@
     </div>
   </header>
 
+
   <main class="cuerpo">
+
 
       <div class="col-izq">
         <div class="caja izq-peq-top">
@@ -52,14 +56,14 @@
                   <div class = "container-compra-pack">
                     <p class = "precio-pack">999€</p>
                     <a href = "version-C.html" class = "comprar-pack">Comprar</a>
-                  </div>       
+                  </div>      
               </div>
             <button class = "flecha">&#8594;</button>
           </div>
-          
-          
+         
+         
         </div>
-        
+       
         <div class="caja izq-grande-bottom">
           <h1 class = "titulo-grande-experiencias">Experiencias de la comunidad mochilera</h1>
           <div class = "container-experiencias">
@@ -109,52 +113,74 @@
         </div>
       </div>
 
+
       <aside class="col-der">
-        <div class="caja der-vertical">
-          <form class = "formulario-registro">
-            <h2>¡Regístrate!</h2>
-            <input type="text" placeholder="Usuario" id = "usuario">
-            <input type="password" placeholder="Contraseña" id = "contraseña">
-            <div class = "registro-checkbox">
-              <input type = "checkbox" id = "credenciales">
-              <label for = "credenciales"> Recordar credenciales</label>
-            </div>
-            <div class = "botones-formulario">
-              <a href = "version-B.html" class = "boton-registro">Iniciar sesión</a>
-              <a href = "version-A.html" class = "boton-registro">Registro</a>
-            </div>
-          </form>
-          <div class = "linea"></div>
-          <div class = "container-textos-derecha">
-            <div class = "texto-derecha">
-              <h2>Top destinos mochileros</h2>
-              <a href = "#">Tailandia</a>
-              <a href = "#">Bolivia</a>
-              <a href = "#">Nepal</a>
-            </div>
-            <div class = "texto-derecha">
-              <h2>Consejos rápidos</h2>
-              <a href = "#">Lleva seguro médico</a>
-              <a href = "#">Infórmate sobre visados</a>
-              <a href = "#">Viaja ligero</a>
-            </div>
-            <div class = "texto-derecha">
-              <h2>Próximos encuentros</h2>
-              <a href = "#">Madrid 12/10</a>
-              <a href = "#">Barcelona 25/10</a>
-              <a href = "#">Valencia 08/11</a>
-            </div>
-            <div class = "texto-derecha">
-              <h2>Sorteos activos</h2>
-              <a href = "#">Viaja a Cancún</a>
-              <a href = "#">100€ de descuento</a>
-              <a href = "#">Conoce a Julián Álvarez</a>
-            </div>
-          </div>
-        </div>
-      </aside>
+  <div class="caja der-vertical-B">
+
+
+    <div class="usuario-B">
+      <div class="info-usuario-B">
+        <p id = "texto-usuario">USUARIO</p>
+        <img src="imagenes/Fotoperfil.png" class="imagen-perfil-usuario" alt="Usuario">
+      </div>
+      <a href="index.html" class="boton-cerrar-B">Cerrar sesión</a>
+    </div>
+
+
+    <div class="linea"></div>
+
+
+    <div class="texto-derecha-B">
+      <h2>Busca experiencias</h2>
+      <div class="checkboxes-B">
+        <input type="checkbox" name="continente" value="america">
+        <p class = "parrafo-checkbox-b">América</p>
+        <input type="checkbox" name="continente" value="europa"><p class = "parrafo-checkbox-b">Europa</p>
+        <input type="checkbox" name="continente" value="asia"><p class = "parrafo-checkbox-b">Asia</p>
+        <input type="checkbox" name="continente" value="africa"><p class = "parrafo-checkbox-b">África</p>
+      </div>
+      <div class="buscador-B">
+        <input type="search" placeholder="Buscar...">
+        <img src="imagenes/magnifying-glass-1976105_1280.webp" alt="buscar" class="icono-lupa-B">
+      </div>
+    </div>
+
+
+    <div class="linea"></div>
+
+
+    <div class="texto-derecha-B">
+      <h2>Últimos consejos</h2>
+      <a href="#">Cómo ahorrar dinero en hostales</a>
+      <a href="#">Mejores apps para planear viajes</a>
+      <a href="#">Visados fáciles en Asia</a>
+    </div>
+
+
+    <div class="texto-derecha-B container-consejos">
+      <h2>¿Tienes algún consejo?</h2>
+      <input type="text" placeholder="Título del consejo" id ="input-consejo" name = "titulo-consejo">
+      <input type="text" placeholder="Escribe aquí tu consejo..." name = "texto-consejo">
+      <div class="acciones-B">
+        <button type="submit">Enviar</button>
+      </div>
+    </div>
+
+
+    <div class="calendario-B">
+      <img src="imagenes/calendario.webp" alt="calendario">
+
+    </div>
+
+
+  </div>
+</aside>
+
+
+
 
   </main>
+
 
 <footer class="pie">
     <div class = "footer-left">@Mochileros viajeros 2025</div>
@@ -186,6 +212,4 @@
       </a>
     </div>
 </footer>
-
-
 </html>
